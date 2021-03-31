@@ -1,9 +1,10 @@
 h1{
 
-    color:blue;
+    color:green;
 }
 
 .header h2{
     display: flex;
     justify-content: center;
+    color: red;
 }
