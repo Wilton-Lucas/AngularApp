@@ -7,16 +7,5 @@
 .header h2{
     display: flex;
     justify-content: center;
-}
-
-.header h3 {
-  display: flex;
-  justify-content: center;
-  background-color: blue;
-}
-
-.header h4 {
-  display: flex;
-  justify-content: center;
-  background-color: greenyellow;
+    color: red;
 }
