@@ -1,0 +1,9 @@
+h1{
+
+    color:blue;
+}
+
+.header h2{
+    display: flex;
+    justify-content: center;
+}
