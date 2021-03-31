@@ -1,10 +1,27 @@
+<<<<<<< HEAD
 h1{
 
     color:green;
+=======
+.header h1{
+    display: flex;
+    justify-content: center;
+    color:blue;
+>>>>>>> c9f062b066dcfcc9633332c2257cee46fe935f04
 }
 
 .header h2{
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     color: red;
 }
+=======
+}
+
+.header h3 {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+}
+>>>>>>> c9f062b066dcfcc9633332c2257cee46fe935f04
