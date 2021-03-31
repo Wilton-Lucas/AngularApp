@@ -14,3 +14,9 @@
   justify-content: center;
   background-color: blue;
 }
+
+.header h3 {
+  display: flex;
+  justify-content: center;
+  background-color: greenyellow;
+}
