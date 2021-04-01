@@ -13,39 +13,39 @@
 <body ng-controller="controlador">
     <div class="Calculadora">
         <div class="tela">
-            <h1>Total: {{total}}</h1>
+            <h1>Total: {{display}}</h1>
             <h2>Display: {{valorDigitado}}</h2>
         </div>
 
         <div class="linha1">
             <div class="numero">
-                <button>7</button>
+                <button ng-click="valorDigitado = valorDigitado+'7'">7</button>
+            </div>
+
+            <div class=" numero">
+                <button ng-click="valorDigitado = valorDigitado+'8'">8</button>
             </div>
 
             <div class="numero">
-                <button>8</button>
-            </div>
-
-            <div class="numero">
-                <button>9</button>
+                <button ng-click="valorDigitado = valorDigitado+'9'">9</button>
             </div>
             <div class="numero">
-                <button>apagar</button>
+                <button ng-click="limpar();">apagar</button>
             </div>
         </div>
 
 
         <div class="linha2">
             <div class="numero">
-                <button>4</button>
+                <button ng-click="valorDigitado = valorDigitado+'4'">4</button>
             </div>
 
             <div class="numero">
-                <button>5</button>
+                <button ng-click="valorDigitado = valorDigitado+'5'">5</button>
             </div>
 
             <div class="numero">
-                <button>6</button>
+                <button ng-click="valorDigitado = valorDigitado+'6'">6</button>
             </div>
             <div class="numero">
                 <button>X</button>
@@ -83,7 +83,7 @@
                 <button>=</button>
             </div>
             <div class="numero">
-                <button>+</button>
+                <button ng-click="somar();">+</button>
             </div>
         </div>
 

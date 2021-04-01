@@ -33,17 +33,20 @@ class Calculadora {
 
 c = new Calculadora();
 
+
+
 angular.module('app', []).controller('controlador', ($scope) => {
 
 
-    $scope.valorDigitado = 0;
+    $scope.valorDigitado = '';
     $scope.operacao = 0;
     $scope.total = c.getTotal();
     $scope.display = c.getTotal() + $scope.valorDigitado;
-    $scope.somar = c.somar($scope.valorDigitado);
+    $scope.somar = () => { c.somar(parseInt($scope.valorDigitado)); $scope.valorDigitado = ''; console.log('total: ' + c.getTotal()) };
     $scope.subtrair = c.subtrair($scope.valorDigitado);
     $scope.multiplicar = c.multiplicar($scope.valorDigitado);
     $scope.dividir = c.dividir($scope.valorDigitado);
+    $scope.limpar = () => { c.limpar(); $scope.valorDigitado = ''; $scope.display = ''; };
 })
 
 
