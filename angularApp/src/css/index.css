@@ -2,13 +2,8 @@
   display: flex;
   background-color: aqua;
 }
-body h1 {
-  display: flex;
-  background-color: aqua;
 
-}
-
-body .tela h1{
+body .tela {
   display: flex;
   background-color: burlywood;
   align-items: center;
