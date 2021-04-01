@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scripts/index.css">
     <script src="./scripts/angular.min.js"></script>
     <script>
 
@@ -20,7 +21,32 @@
 
 <body ng-controller="controlador">
     <h1>{{mensagem}}</h1>
-    <input type="text" ng-model="mensagem" placeholder="Enter a name here" />
+    <input id="texto"type="text" ng-model="mensagem" placeholder="Enter a name here" />
+    <div class="Calculadora">
+      <div class="tela">
+        <h1>Aqui vai ser a tela</h1>
+      </div>
+
+      <div class="numeros">
+
+        <div class="linha1">
+        <div class="numero">
+          <h1>1</h1>
+        </div>
+
+        <div class="numero">
+          <h1>2</h1>
+        </div>
+
+        <div class="numero">
+          <h1>2</h1>
+        </div>
+
+      </div>
+      </div>
+
+    </div>
+
 </body>
 
 </html>
