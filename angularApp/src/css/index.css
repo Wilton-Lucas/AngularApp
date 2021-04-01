@@ -18,14 +18,34 @@ body .tela h1{
 }
 
 body .linha1 {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-body .numero h1{
-  display: inline-block;
+body .linha2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+body .linha3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+body .linha4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+body .numero button{
+  display: flex;
   background-color: chartreuse;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 
