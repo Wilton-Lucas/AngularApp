@@ -46,6 +46,10 @@ body {
   background-color: #060606;
   align-items: center;
   justify-content: center;
+  font-weight: 800;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
   width: 100px;
   height: 100px;
   margin: 5px;
