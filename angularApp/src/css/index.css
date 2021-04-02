@@ -1,46 +1,60 @@
-#texto {
-  display: flex;
-  background-color: aqua;
+body {
+  background-color: #222327;
 }
 
-body .tela {
+.display {
+  display: flex;
+  justify-content: center;
+}
+
+.tela {
   display: flex;
   background-color: burlywood;
   align-items: center;
   justify-content: center;
-  width: 400px;
+  width: 430px;
   height: 150px;
 }
 
-body .linha1 {
+.linha1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+
 }
 
-body .linha2 {
+.linha2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-body .linha3 {
+.linha3 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-body .linha4 {
+.linha4 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-body .numero button{
+.numero button{
   display: flex;
-  background-color: chartreuse;
+  background-color: #060606;
   align-items: center;
+  justify-content: center;
   width: 100px;
   height: 100px;
+  margin: 5px;
+}
+
+
+.numero button:hover {
+	background-color: #707070;
+
+	cursor: pointer;
 }
 

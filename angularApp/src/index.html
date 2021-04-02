@@ -2,92 +2,95 @@
 <html ng-app="app" lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/index.css">
-  <script src="./scripts/angular.min.js"></script>
-  <script src="./controllers/mainController.js"></script>
-  <title>AppAngular</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./scripts/angular.min.js"></script>
+    <script src="./controllers/mainController.js"></script>
+    <title>AppAngular</title>
 </head>
 
 <body ng-controller="controlador">
-  <div class="Calculadora">
-    <div class="tela">
-      <h1>Total: {{total}}</h1>
-      <h2>Display: {{valorDigitado}}</h2>
+    <div class="Calculadora">
+
+        <div class="display">
+        <div class="tela">
+            <h1>Total: {{display}}</h1>
+            <h2>Display: {{valorDigitado}}</h2>
+        </div>
+        </div>
+
+        <div class="linha1">
+            <div class="numero">
+                <button ng-click="valorDigitado = valorDigitado+'7'">7</button>
+            </div>
+
+            <div class=" numero">
+                <button ng-click="valorDigitado = valorDigitado+'8'">8</button>
+            </div>
+
+            <div class="numero">
+                <button ng-click="valorDigitado = valorDigitado+'9'">9</button>
+            </div>
+            <div class="numero">
+                <button ng-click="limpar();">apagar</button>
+            </div>
+        </div>
+
+
+        <div class="linha2">
+            <div class="numero">
+                <button ng-click="valorDigitado = valorDigitado+'4'">4</button>
+            </div>
+
+            <div class="numero">
+                <button ng-click="valorDigitado = valorDigitado+'5'">5</button>
+            </div>
+
+            <div class="numero">
+                <button ng-click="valorDigitado = valorDigitado+'6'">6</button>
+            </div>
+            <div class="numero">
+                <button>X</button>
+            </div>
+        </div>
+
+        <div class="linha3">
+            <div class="numero">
+                <button>1</button>
+            </div>
+
+            <div class="numero">
+                <button>2</button>
+            </div>
+
+            <div class="numero">
+                <button>3</button>
+            </div>
+            <div class="numero">
+                <button>-</button>
+            </div>
+        </div>
+
+        <div class="linha4">
+
+            <div class="numero">
+                <button>.</button>
+            </div>
+
+            <div class="numero">
+                <button>0</button>
+            </div>
+
+            <div class="numero">
+                <button>=</button>
+            </div>
+            <div class="numero">
+                <button ng-click="somar();">+</button>
+            </div>
+        </div>
+
     </div>
-
-    <div class="linha1">
-      <div class="numero">
-        <button>7</button>
-      </div>
-
-      <div class="numero">
-        <button>8</button>
-      </div>
-
-      <div class="numero">
-        <button>9</button>
-      </div>
-      <div class="numero">
-        <button>apagar</button>
-      </div>
-    </div>
-
-
-    <div class="linha2">
-      <div class="numero">
-        <button>4</button>
-      </div>
-
-      <div class="numero">
-        <button>5</button>
-      </div>
-
-      <div class="numero">
-        <button>6</button>
-      </div>
-      <div class="numero">
-        <button>X</button>
-      </div>
-    </div>
-
-    <div class="linha3">
-      <div class="numero">
-        <button>1</button>
-      </div>
-
-      <div class="numero">
-        <button>2</button>
-      </div>
-
-      <div class="numero">
-        <button>3</button>
-      </div>
-      <div class="numero">
-        <button>-</button>
-      </div>
-    </div>
-
-    <div class="linha4">
-
-      <div class="numero">
-        <button>.</button>
-      </div>
-
-      <div class="numero">
-        <button>0</button>
-      </div>
-
-      <div class="numero">
-        <button>=</button>
-      </div>
-      <div class="numero">
-        <button>+</button>
-      </div>
-    </div>
-
-  </div>
 
 </body>
 
