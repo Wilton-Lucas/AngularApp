@@ -1,4 +1,4 @@
-class Calculadora {
+export default class Calculadora {
 
     constructor() {
         this.total = 7;
